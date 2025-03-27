@@ -17,7 +17,7 @@ public class App {
         System.out.println("Your username is: " + username_from_input);
         System.out.println("Your password is: " + password_from_input);
         
-        User me = new User(username_from_input, password_from_input)
+        User me = new User(username_from_input, password_from_input);
         File myfile = new File("accounts.txt");
 
         if (myfile.exists()){
@@ -61,7 +61,7 @@ public class App {
             
         }
         if (account_exists){
-            System.out.println("login successful, Hello" + me.getUsername() );
+            System.out.println("login successful, Hello " + me.getUsername() );
         }else{
             System.out.println("login unsuccessful");
         }
